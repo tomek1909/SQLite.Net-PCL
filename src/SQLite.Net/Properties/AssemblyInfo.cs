@@ -14,5 +14,7 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
+/*
 [assembly: InternalsVisibleTo("SQLite.Net.Tests")]
 [assembly: InternalsVisibleTo("SQLite.Net.Async")]
+*/
