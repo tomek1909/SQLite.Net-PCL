@@ -55,7 +55,7 @@ namespace SQLite.Net.Tests
             {
                 _sqliteConnectionPool.Reset();
             }
-            _path = Path.Combine(Path.GetTempPath(), DatabaseName);
+            _path = Path.Combine(TestPath.GetTempFileName(), DatabaseName);
             // delete old db file
             File.Delete(_path);
 
