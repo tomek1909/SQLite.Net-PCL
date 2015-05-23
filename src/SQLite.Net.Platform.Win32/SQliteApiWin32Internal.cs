@@ -22,7 +22,7 @@ namespace SQLite.Net.Platform.Win32
             IntPtr ret = LoadLibrary(interopPath);
             if (ret == IntPtr.Zero)
             {
-                throw new Exception("Failed to load native sqlite library");
+                throw new Exception("Failed to load native sqlite library: " + interopPath + ", error " + Marshal.GetLastWin32Error().ToString());
             }
         }
 
